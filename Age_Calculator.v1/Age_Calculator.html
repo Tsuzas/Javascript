@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="Age_Calculator.css">
+    <script src="Age_Calculator.js"></script>
+</head>
+<body class="monospace">
+    
+    <h1>Welcome to the Age Calculator!</h1>
+    <h3>Insert your Birthday so we can Calculate!</h3>
+    <label for="">Select  date:</label>
+
+    <input type="date" id="date" name="trip-start">
+
+    <button onclick="getData()">Calculate</button>
+
+    <h1 id="age">Age is :</h1>
+    
+    
+    <script>
+        function adaptiveMaxYear(){
+        const dateInput = document.getElementById("date");
+        const today = new Date();
+        const maxDate = today.toISOString().split('T')[0];
+        dateInput.max = maxDate;
+        }
+
+        window.onload = adaptiveMaxYear;
+    </script>
+</body>
+</html>

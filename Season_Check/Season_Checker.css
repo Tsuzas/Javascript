@@ -1,0 +1,25 @@
+body {
+
+    /* CENTERING */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-color: bisque;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+}
+button{
+    margin-top: 1%;
+    margin-bottom: -1.5%
+}
+
+h1{
+    margin-bottom: -1.5%;
+}
+
+h4{
+    margin-bottom: 0.5%
+}
